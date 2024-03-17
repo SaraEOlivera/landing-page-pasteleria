@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es un proyecto de sitio web de la pasteleróa Olimanteca">
+    <meta name="author" content="Sara E. Olivera">
+    <title>Olimanteca - Pastelería</title>
+    <meta property="og:title" content="Pastelería Olimanteca" />
+    <meta property="og:description" content="Proyecto de sitio web de la pastelería Olimanteca" />
+    <!-- <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" /> -->
+    <meta property="og:image" content="logos/logo2/favicon.png" />
+    <link rel="shortcut icon" href="logos/logo3/png/logo-no-background.png" type="image/x-icon">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a class="navbar-brand logo" href="index.html">
+                        <img src="logos/logo3/png/logo-no-background.png" class="img-logo" alt="Logo de la página">
+                    </a>
+                    <ul class="roboto-light-italic navbar-nav d-flex justify-content-center align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dónde estamos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seccion imagen central -->
+        <section class="imagen">
+            <div class="imagen-central">
+                <img src="imagenes/centro.png" alt="Imagen de central">
+            </div>
+        </section>
+
+        <!-- Section Nosotros -->
+        <section class="about">
+            <div class="container contenedor-about">
+                <div class="row fila-1">
+                    <div class="texto texto1">
+                        <p class="roboto-light-italic">Nuestros productos son artesanales, ricos, con materia prima de excelente calidad, sin
+                            conservantes y recién hechos. Contamos con gran variedad de tortas, tartas y delicias.</p>
+                    </div>
+                    <div class="foto foto1">
+                        <img src="imagenes/11.jpg" alt="Imagen de torta">
+                    </div>
+                </div>
+                <div class="row fila-2">
+                    <div class="foto foto2">
+                        <img src="imagenes/13.jpg" alt="Imagen de torta">
+                    </div>
+                    <div class="texto texto2 roboto-light-italic">
+                        <p>Trabajamos a diario para que a tu mesa lleguen los productos más ricos y sanos. Somos la opción más rica y cerca tuyo, para todos los momentos del día.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seccion Opciones -->
+        <section class="opciones">
+            <div class="container contenedor-opciones">
+                <div class="icono-opcion">
+                    <div class="icono">
+                        <a href="#"><i class="bi bi-bag-heart"></i></a>
+                    </div>
+                    <div class="texto-opcion"><p class="roboto-medium">Takeaway</p></div>
+                </div>
+                <div class="icono-opcion medio">
+                    <div class="icono">
+                        <a href="#"><i class="bi bi-truck"></i></a>
+                    </div>
+                    <div class="texto-opcion"><p class="roboto-medium">Delivery</p></div>
+                </div>
+                <div class="icono-opcion">
+                    <div class="icono">
+                        <a href="#"><i class="bi bi-gift"></i></a>
+                    </div>
+                    <div class="texto-opcion"><p class="roboto-medium">Gift Cards</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion productos -->
+        <section class="work" id="work">
+            <div class="container-work">
+                <div class="grupo primer-grupo">
+                    <img onclick="onClick(this)" class="img-work" src="imagenes/carrusel/01.jpg" alt="A microphone">
+                    <img onclick="onClick(this)" class="img-work" src="imagenes/carrusel/05.png" alt="A phone">
+                    <img onclick="onClick(this)" class="img-work" src="imagenes/carrusel/09.jpeg" alt="A drone">
+                </div>
+                <div class="grupo segundo-grupo">
+                    <img onclick="onClick(this)" class="img-work" src="imagenes/carrusel/16.jpg" alt="A soundbox">
+                    <img onclick="onClick(this)" class="img-work" src="imagenes/carrusel/15.jpg" alt="A soundbox">
+                    <img onclick="onClick(this)" class="img-work" src="imagenes/carrusel/14.jpg" alt="A soundbox">
+                </div>
+            </div>
+            <!-- Modal -->
+            <div id="modal" class="modal" onclick="this.style.display='none'">
+                <span class="btn-close" title="Close" >x</span>
+                <div>
+                    <img id="imageZoom" class="image-zoom">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion envios -->
+        <section class="envios">
+            <div class="container contenedor-envios">
+                <p class="roboto-light-italic p-envios">Hace tu pedido:</p>
+                <div class="div-logos">
+                    <a href="https://www.pedidosya.com.ar/" target="_blank">                
+                        <img class="img-envios" src="logos/pedidosya.jpg" alt="Logo de Pedidos Ya">
+                    </a>
+                    <a href="https://www.rappi.com.ar/" target="_blank">
+                        <img class="img-envios" src="logos/rappi.png" alt="Logo de Rappi">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Contacto -->
+        <section class="contacto">
+            <div class="contenedor-contacto">
+                <div class="div-contacto img-contacto">
+                    <img src="imagenes/12.jpg" alt="imagen de pastelitos">
+                </div>
+                <div class="div-contacto formulario-contacto">
+                    <p class="roboto-light-italic p-formulario" p-envios>Contacto</p>
+                    <form action="#">
+                        <input class="input" name="name" type="text" placeholder="Nombre" required maxlength="30">
+                        <input class="input" type="email" name="email" placeholder="Email" required maxlength="50">
+                        <!-- <input class="input" type="text" name="subject" placeholder="Subject" maxlength="50"> -->
+                        <textarea class="input textarea" name="messaje" placeholder="Mensaje" maxlength="500" cols="30" rows="7" required></textarea>  
+                        <a class="btn-contacto" href="#"><i class="bi bi-send-fill">Enviar</i></a>
+                    </form>
+                </div>
+            </div>
+            <div class="mapa-contacto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.6048131507978!2d-58.41992989417911!3d-34.60988635408083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5fb670a1ef%3A0x63f19390829d3257!2sBartolom%C3%A9%20Mitre%203794%2C%20C1201AAS%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1710553870961!5m2!1ses-419!2sar" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer-olimanteca">
+        <div class="contenedor-footer">
+            <a href="index.html"><img src="logos/logo1.png" alt="Logo Olimanteca" class="img-footer">
+            </a>
+            <div class="icon-footer">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-whatsapp"></i>            
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-oli">
+        <a class="oli roboto-light-italic" href="https://github.com/SaraEOlivera" target="_blank">Sara Elisa Olivera - 2024</a>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

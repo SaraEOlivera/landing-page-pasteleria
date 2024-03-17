@@ -1,0 +1,409 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #d6d3d3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 1200px;
+    margin: auto;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+header {
+    width: 100%;
+    border-top: 3px solid #efb810;
+}
+
+.navbar {
+    padding: 2rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 25px; 
+}
+
+.logo img {
+    width: 150px;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    padding: 10px;
+    padding-top: 25px;
+}
+
+.nav-link:hover{
+    color: #bf930d;
+}
+
+main {
+    width: 100%;
+}
+
+
+/* Seccion central */
+.imagen .imagen-central {
+    width: 100%;
+    height: auto;
+}
+
+.imagen-central img {
+    width: 100%;
+    height: 650px;
+}
+
+/*Seccion Nosotros*/
+section.about {
+    width: 100%;
+    height: 900px;
+    padding-top: 10%; 
+}
+
+.about .contenedor-about{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-about .fila-1 {
+    height: auto;
+    width: 100%;
+    margin: auto;
+}
+.contenedor-about .fila-2 {
+    height: auto;
+    margin: auto;
+    width: 100%;
+}
+
+.fila-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.texto {
+    width: 50%;
+    height: auto;
+    padding: 2px;
+    padding-top: 3rem;
+}
+
+.texto p{
+    font-size: 1.6rem;
+    padding: 2rem;
+    margin: auto;
+    letter-spacing: 2px;
+}
+
+.foto {
+    width: 50%;
+    height: auto;
+    padding: 2px;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+}
+
+/*seccion opciones*/
+section.opciones {
+    width: 100%;
+    height: 550px;
+    padding-top: 10%;
+}
+
+.opciones .contenedor-opciones{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid #3c3935;
+}
+
+.contenedor-opciones .medio {
+    border-left: 2px solid #3c3935;
+    border-right: 2px solid #3c3935;
+}
+
+.icono-opcion {
+    width: 30%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.icono, .texto-opcion {
+    margin: auto;
+}
+
+.icono i {
+    color: #3c3935;
+    font-size: 7rem;
+}
+
+.texto-opcion p {
+    font-size: 1.6rem;
+}
+
+/* seccion productos */
+.container-work {
+    padding-top:40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-work {
+    width: 100%;
+    height: 400px;
+    padding: 5px;
+}
+
+.img-work:hover{
+    opacity: 0.5;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0,9);
+}
+
+.image-zoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Animacion a la imagen */
+.image-zoom {
+    -webkit-animation-name: imgZoom;
+    -webkit-animation-duration: 0.5s;
+    animation-name: imgZoom;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes imgZoom {
+    from {-webkit-transform: scale(0);}
+    to {-webkit-transform: scale(1);}
+}
+
+@keyframes imgZoom {
+    from { transform: scale(0);}
+    to { transform: scale(1);}
+}
+
+.btn-close {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    font-size: 30px;
+    transition: 0.5s;
+    color: #fffcfc;
+}
+
+.btn-close:hover {
+    cursor: pointer;
+    color: #696565;
+}
+
+/*Seccion envios*/
+section.envios {
+    width: 100%;
+    height: 550px;
+    padding-top: 10%;
+}
+
+.envios .contenedor-envios{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p-envios{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.div-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.img-envios{
+    width: 50%;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+/*Seccion contacto*/
+section.contacto {
+    width: 100%;
+    height: 1150px;
+    padding-top: 20px;
+    border-top: 3px solid #3c3935;
+}
+
+.contacto .contenedor-contacto {
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.contenedor-contacto .div-contacto {
+    height: 500px;
+}
+
+.contenedor-contacto .img-contacto {
+    width: 50%;
+    height: 500px;
+}
+
+.p-formulario{
+    font-size: 3rem;
+    text-align: center;
+    /* padding: 5px; */
+    letter-spacing: 1px;
+}
+
+.contenedor-contacto .formulario-contacto {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Formulario */
+.input {
+    display: block;
+    width: 95%;
+    margin: 20px;
+    padding: 6px;
+    border: 1px solid #efb810;
+}
+
+textarea:focus,input:focus{
+    outline:none
+}
+
+.textarea {
+    margin-bottom: 30px;
+}
+
+.btn-contacto{
+    text-decoration: none;
+    padding: 12px;
+    background-color: #d6d3d3;
+    color: #3c3935;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 14px;
+    margin-left: 20px;
+    border: 1px solid #efb810;
+}
+
+.btn-contacto:hover {
+    color: #d7a50f;
+}
+
+/*Footers*/
+.footer-olimanteca{
+    height: 250px;
+    width: 100%;
+}
+.contenedor-footer {
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333333;
+}
+
+.icon-footer {
+    background-color: #333333;
+}
+
+.icon-footer i {
+    background-color: #333333;
+    color: #d6d3d3;
+    padding: 20px;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+.icon-footer i:hover{
+    color: #efb810;
+}
+
+.footer-oli {
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    background-color: #262626;
+    padding-top: 20px;
+}
+
+.footer-oli a {
+    height: 70px;
+    background-color: #262626;
+    color: #d6d3d3;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-oli a:hover {
+    color: #efb810;
+}
